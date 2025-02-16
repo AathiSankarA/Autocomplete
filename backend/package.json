@@ -1,0 +1,7 @@
+{
+  "name": "autocomplete",
+  "dependencies": {
+    "js-pytorch": "^0.7.2",
+    "node": "^18.20.6"
+  }
+}
