@@ -1,16 +1,12 @@
-'use strict'
+const express = require('express')
+const app = express()
+const port = 4000
 
-const { createServer } = require('node:http');
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
 
-const hostname = process.env.HOST;
-const port = process.env.PORT;
-
-const server = createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World');
-});
-
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
+      

@@ -1,7 +1,15 @@
 {
-  "name": "autocomplete",
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.tsx",
+  "scripts": {
+    "run": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
   "dependencies": {
-    "js-pytorch": "^0.7.2",
-    "node": "^18.20.6"
+    "express": "^4.21.2",
+    "js-pytorch": "^0.7.2"
   }
 }
