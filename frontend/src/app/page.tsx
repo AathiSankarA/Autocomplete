@@ -1,17 +1,19 @@
-'use strict'
-'use client'
-
-import { useState } from "react";
+import Link from "next/link";
 
 export default function Home() {
-  const [content,setContent] = useState<String>('')
-  function changeHandler(){
-    console.log(content)
-  }
-
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <input type="text" onChange={changeHandler}/>
+    <>
+    <div className="w-full align-middle justify-items-center">
+      <br/>
+      {/* <h1 className="text-4xl"> Welcome to Autocomplete App </h1> */}
+      <br/>
+      <p className="text-xl">
+        Go to models page to see available models
+      </p>
+      <p className="text-xl">
+        Go to try page to try on various models
+      </p>
     </div>
-  );
+    </>
+  )
 }
