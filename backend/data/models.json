@@ -1,0 +1,21 @@
+[
+    {
+        "category" : "General",
+        "instances" : [
+            "two_words",
+            "wiki_1"
+        ]
+    },
+    {
+        "category" : "Creative",
+        "instances" : [
+            "story"
+        ]
+    },
+    {
+        "category" : "Technical",
+        "instances" : [
+            "computer"
+        ]
+    }
+]

@@ -1,0 +1,5 @@
+numpy
+pandas
+torch
+fastapi[standard]
+python-dotenv
