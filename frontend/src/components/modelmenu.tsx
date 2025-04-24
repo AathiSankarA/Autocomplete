@@ -21,7 +21,6 @@ import {
 
 import { Dispatch, SetStateAction, useEffect, useState } from "react"
 import axios from "axios"
-import { it } from "node:test"
 
 export function ModelsMenu({setModel}:{ setModel: Dispatch<SetStateAction<string>> }) {
   const [models, setModels] = useState<{ "category": string, "instances": string[] }[]>([])

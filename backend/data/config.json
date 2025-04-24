@@ -27,5 +27,47 @@
         "P_DROPOUT": 0.2,
         "EPOCH": 50,
         "VOCAB":"char2int_2.json"
+    },
+    "big_one":{
+        "HIDDEN_SIZE": 128,
+        "VOCAB_SIZE":48,
+        "N_LAYERS":4,
+        "P_DROPOUT": 0.2,
+        "VOCAB":"char2int_2.json"
+    },
+    "big_two":{
+        "HIDDEN_SIZE": 256,
+        "VOCAB_SIZE":42,
+        "N_LAYERS":5,
+        "P_DROPOUT": 0.2,
+        "VOCAB":"char2int.json"
+    },
+    "big_three":{
+        "HIDDEN_SIZE": 128,
+        "VOCAB_SIZE":42,
+        "N_LAYERS": 6,
+        "P_DROPOUT": 0.2,
+        "VOCAB":"char2int.json"
+    },
+    "comp_one":{
+        "HIDDEN_SIZE": 32,
+        "VOCAB_SIZE":48,
+        "N_LAYERS":3,
+        "P_DROPOUT": 0.2,
+        "VOCAB":"char2int_3.json"
+    },
+    "comp_two":{
+        "HIDDEN_SIZE": 64,
+        "VOCAB_SIZE":48,
+        "N_LAYERS":3,
+        "P_DROPOUT": 0.2,
+        "VOCAB":"char2int_3.json"
+    },
+    "comp_big_one":{
+        "HIDDEN_SIZE": 128,
+        "VOCAB_SIZE":48,
+        "N_LAYERS":5,
+        "P_DROPOUT": 0.2,
+        "VOCAB":"char2int_3.json"
     }
 }

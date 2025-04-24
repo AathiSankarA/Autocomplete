@@ -1,5 +1,6 @@
 numpy
 pandas
 torch
-wikipedia
+# wikipedia
 python-dotenv
+# torchtext

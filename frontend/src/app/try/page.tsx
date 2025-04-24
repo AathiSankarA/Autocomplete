@@ -9,7 +9,8 @@ export default function Try() {
   const [connection, setConnection] = useState<WebSocket | null>(null);
   const [autocomplete, setAutocomplete] = useState<string>("");
   const [model , setModel] = useState<string>("")
-  
+  const [len , setLen] = useState<number>(0);
+
   useEffect(() => {
     const wsConn = new WebSocket("ws://localhost:8000/" + model);
     wsConn.onmessage = onMessage;
@@ -20,16 +21,22 @@ export default function Try() {
     };
   }, [model]);
 
+  useEffect(() => {setLen(text.length)},[text]);
+
   function onMessage(event: MessageEvent) {
     const data = event.data;
-    if (data.substr(0) == "[")
+    console.log(data,text,String(text).length,len);
+    if (data.substr(0,1) == "[")
       {setAutocomplete(data.slice(text.length+1));}
     else
       {setAutocomplete(data.slice(text.length));}
   }
 
   function handleOnInput(e: ChangeEvent<HTMLTextAreaElement>) {
-    setText(e.target.value);
+    const te = e.target.value;
+    setText(te);
+    setLen(te.length);
+    console.log(e.target.value.length);
     if (connection?.readyState === WebSocket.OPEN) {
       connection.send(e.target.value);
     }

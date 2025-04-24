@@ -27,9 +27,9 @@ export default function Models() {
           "P_DROPOUT": number
         }
       }[] = [];
-      var te;
-      for (let i of result) {
-        for (let j of i.instances) {
+      let te;
+      for (const i of result) {
+        for (const j of i.instances) {
           {
             te = await axios.get(`http://localhost:8000/model/${i.category}/${j}`).then(r => r.data);
             temp.push({"instance":j,"config":te});

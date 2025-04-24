@@ -1,4 +1,4 @@
-import { Github, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import {
   NavigationMenu,
   NavigationMenuList,
@@ -12,7 +12,6 @@ import {
   AvatarFallback,
   AvatarImage,
 } from "@/components/ui/avatar"
-import { Button } from "./ui/button";
 import Link from "next/link";
 
 

@@ -94,6 +94,6 @@ class GenerateText:
         return "".join(all_chars)
         
     def encode_char(self, char):
-        char_int = self.char2int.get(char)
+        char_int = self.char2int.get(char,0)
         char_one_hot = F.one_hot(torch.tensor(char_int), self.n_chars).float()
         return char_one_hot.unsqueeze(0).unsqueeze(0).to(self.device)

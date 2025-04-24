@@ -9,13 +9,19 @@
     {
         "category" : "Creative",
         "instances" : [
-            "story"
+            "story",
+            "big_one",
+            "big_two",
+            "big_three"
         ]
     },
     {
         "category" : "Technical",
         "instances" : [
-            "computer"
+            "computer",
+            "comp_one",
+            "comp_two",
+            "comp_big_one"
         ]
     }
 ]
